@@ -30,7 +30,9 @@ imagenumber=0
 
 model=1
 #selecting image source-localfile or camera
-seter = easygui.buttonbox(msg="Please select Image source",choices=('CAMERA','IMAGE FILE ON DISCK'))
+#seter = easygui.buttonbox(msg="Please select Image source",choices=('CAMERA','IMAGE FILE ON DISCK'))
+seter = "IMAGE FILE ON DISCK"
+
 
 #directory for saving output files
 workingdir = easygui.diropenbox(msg="Please select folder to save files",title="Choose working directory",default=None)
@@ -150,14 +152,14 @@ while retry==True:
     cv2.waitKey(10000)
     
     #asking for recount or not
-    repeat = easygui.buttonbox(msg=results,choices=('RECOUNT','LOOK FOR SMALLER COLONIES'))
-    #repeat=easygui.msgbox(msg=results,title="results",ok_button='RECOUNT')
+    repeat = easygui.buttonbox(msg=results,choices=('COUNT NEW PLATE','LOOK FOR SMALLER COLONIES'))
+   
     cv2.destroyAllWindows()  
     #print(gc.collect())
     gc.collect()
     #CHEKING FOR RECOUNTING OR NOT
     
-    if repeat == "RECOUNT":
+    if repeat == "COUNT NEW PLATE":
        retry=True
        del _,a,b,contours2,detected_circles,edges,final,gray,gray_blurred,h,hh,hierarchy2,imS,imagefinal,img,maxr,r,results,w
     elif repeat == "LOOK FOR SMALLER COLONIES":
@@ -194,8 +196,8 @@ while retry==True:
         cv2.imshow("finalColonies", imS)
         cv2.waitKey(15000)
         model=1
-        repeat=easygui.msgbox(msg=results,title="results",ok_button='RECOUNT')
-        if repeat == "RECOUNT":
+        repeat=easygui.msgbox(msg=results,title="results",ok_button='COUNT NEW PLATE')
+        if repeat == "COUNT NEW PLATE":
             retry=True
         else:
             retry=False

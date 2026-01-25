@@ -16,8 +16,8 @@ def thresholder(final,model):
     modifiedval=np.delete(val,np.where(val==255))
     mean=int(modifiedval.mean())
     std=int(modifiedval.std())
-    print("mean:",mean)
-    print("std:",std)
+    #print("mean:",mean)
+    #print("std:",std)
     
     
     
@@ -26,7 +26,7 @@ def thresholder(final,model):
         filtersize=3
         minThreshold=mean-(0.80*std)
         minThreshold=int(minThreshold)
-        print("tresh:",minThreshold)
+        #print("tresh:",minThreshold)
         maxThreshold=-1
         edges=cv2.Canny(final,eedges,minThreshold,maxThreshold,filtersize,L2gradient=True)
     elif model==2:
@@ -36,9 +36,9 @@ def thresholder(final,model):
     
     #edges=cv2.Canny(final,eedges,100,-1,3,L2gradient=True)
     imS = cv2.resize(edges, (700, 500))
-    cv2.imshow("Canny", imS)
-    cv2.waitKey(5000)
-    cv2.destroyAllWindows()
+    #cv2.imshow("Canny", imS)
+    #cv2.waitKey(5000)
+    #cv2.destroyAllWindows()
     cv2.imwrite("canny.jpg",edges)
 
     return(edges)

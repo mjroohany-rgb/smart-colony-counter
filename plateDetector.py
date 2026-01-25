@@ -50,7 +50,7 @@ def plateCropper(gray_blurred,a,b,r):
     
     final = cv2.bitwise_or(fg, bk)
     imS = cv2.resize(final, (700, 500))
-    cv2.imshow("Cropped Circle", imS)
-    cv2.waitKey(5000)
-    cv2.destroyAllWindows()
+    #cv2.imshow("Cropped Circle", imS)
+    #cv2.waitKey(5000)
+    #cv2.destroyAllWindows()
     return(final)

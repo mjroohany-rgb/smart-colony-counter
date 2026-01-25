@@ -214,9 +214,9 @@ def contoursDrawer(r,contoursExtera,imagefinal,imagenumber,workingdir,h,w,contou
         results=results+"may be it is a TNTC plate \n"
     elif comtours2len > 900:
         results=results+"may be it is a TNTC plate \n"
-    print("areaTNTC:",areaTNTC)
-    print("contoursExtraLen",contoursExtraLen)
-    print("comtours2len:",comtours2len)
+    #print("areaTNTC:",areaTNTC)
+    #print("contoursExtraLen",contoursExtraLen)
+    #print("comtours2len:",comtours2len)
     
     #save image in workking directory
     savedirectory=workingdir+"/finalcolonies"+str(imagenumber)+".jpg"

@@ -39,17 +39,17 @@ def badcontourremover(r,contours2,hierarchy2,black):
                     
         cn=cn+1
     imS = cv2.resize(bb, (700, 500))
-    cv2.imshow("Extra 1", imS)
-    cv2.waitKey(5000)
-    cv2.destroyAllWindows()
+    #cv2.imshow("Extra 1", imS)
+    #cv2.waitKey(5000)
+    #cv2.destroyAllWindows()
 
     contoursExtera , hierarchyExtra= cv2.findContours(bb, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
     
     cv2.drawContours(EE, contoursExtera, -1, (255,255,255), 1)
     EE=cv2.morphologyEx(EE, cv2.MORPH_CLOSE, kernel)
     imSs = cv2.resize(EE, (700, 500))
-    cv2.imshow("Extra2", imSs)
-    cv2.waitKey(5000)
-    cv2.destroyAllWindows()
+    #cv2.imshow("Extra2", imSs)
+    #cv2.waitKey(5000)
+    #cv2.destroyAllWindows()
     
     return(contoursExtera)
