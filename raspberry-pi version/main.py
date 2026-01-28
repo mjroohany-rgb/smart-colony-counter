@@ -4,7 +4,7 @@
 #import necessary libraries
 import easygui
 import cv2
-#from picamera import PiCamera
+from picamera import PiCamera
 from time import sleep
 import gc
 import numpy as np
@@ -14,7 +14,7 @@ import statistics
 import plateDetector
 import thresholder
 import contoursDrawer
-#import cameraHandler
+import cameraHandler
 import badContourRemover
 
 
@@ -23,15 +23,15 @@ import badContourRemover
 #This must seted in cameraHnadler but because of that placing this line
 # in a loop make's GPU full and camera unavalabe; so we define it here and use it in cameraHandler as a parameter.
 
-#camera=PiCamera()
+camera=PiCamera()
 
 #imagenuber variable make's different naming for imagefiles
 imagenumber=0
 
 model=1
 #selecting image source-localfile or camera
-#seter = easygui.buttonbox(msg="Please select Image source",choices=('CAMERA','IMAGE FILE ON DISCK'))
-seter = "IMAGE FILE ON DISCK"
+seter = easygui.buttonbox(msg="Please select Image source",choices=('CAMERA','IMAGE FILE ON DISCK'))
+#seter = "IMAGE FILE ON DISCK"
 
 
 #directory for saving output files
