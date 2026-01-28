@@ -45,6 +45,13 @@ also using **conda** can help full for handling dependencies
  - opencv-python==4.10.0
  - scikit-image==0.20.0
 
+## notice
+This program uses both standard and approximate counting methods.
+Please reconcile the counting results and use them after verification by yourself or a qualified person.
+
+## Disclaimer
+THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ## Acknowledgement
 
 This project was originally intended as a (D.V.M) degree thesis in **Islamic Azad University - Shabestar Branch** - Faculty of Veterinary Medicine.
