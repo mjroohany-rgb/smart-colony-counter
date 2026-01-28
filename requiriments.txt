@@ -1,5 +1,6 @@
-easygui==0.98.1
-numpy==2.2.4
+easygui==0.98.3
+numpy==1.24.3
 opencv-python==4.10.0
-scikit-image==0.25.2
+scikit-image==0.20.0
+
 
