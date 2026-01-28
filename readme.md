@@ -9,22 +9,29 @@ main goal of this Application is create an easy to use Colony counter, without a
  1. Download one of the releases that suitable for your system and run
     it.
  2. select a Folder to save count output images.
+ 
  ![select working directory](https://github.com/mjroohany-rgb/smart-colony-counter/blob/main/How%20to%20use/How%20to%20use%20%281%29.png)
+ 
  4. select image containing cultured Petri dish.
+ 
  ![select input image](https://github.com/mjroohany-rgb/smart-colony-counter/blob/main/How%20to%20use/How%20to%20use%20%282%29.png)
 
 > usually does not need clean plate marks or opening plate door - just a clear image is enough.
 
  5. Microbial plate will automatically recognized,
   calibrations will automatically done for each picture separately
-   ![detect plate](https://github.com/mjroohany-rgb/smart-colony-counter/blob/main/How%20to%20use/How%20to%20use%20%283%29.png)
+ 
+ ![detect plate](https://github.com/mjroohany-rgb/smart-colony-counter/blob/main/How%20to%20use/How%20to%20use%20%283%29.png)
 
 > (so you can use multiple culture mediums with different colors).
 
  5. results will be shown:
  - if it is acceptable you can count new plate
+
 ![results](https://github.com/mjroohany-rgb/smart-colony-counter/blob/main/How%20to%20use/How%20to%20use%20%284%29.png)
+
 ![results](https://github.com/mjroohany-rgb/smart-colony-counter/blob/main/How%20to%20use/How%20to%20use%20%285%29.png)
+
 - If it is not acceptable you can recount with **"look for smaller colonies"** option that has different counting algorithm which is more suitable for small sized colonies.
 
 ## Requirements
